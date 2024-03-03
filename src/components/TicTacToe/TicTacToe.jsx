@@ -96,7 +96,7 @@ const won  = (winner) => {
 const reset = () => {
   setLock(false);
   data = ["","","","","","","","","",""];
-  titleRef.current.innerHTML = 'Tic Tac Toe Game <span>ХЭКСЛЕТ</span> ' 
+  titleRef.current.innerHTML = 'Tic Tac Toe Game <span>Aloha</span> ' 
   box_array.map((e) => {
     e.current.innerHTML = "";
   })
@@ -104,7 +104,7 @@ const reset = () => {
 
   return (
     <div className='container'>
-        <h1 className='title' ref = {titleRef}> Tic Tac Toe Game <span>ХЭКСЛЕТ</span></h1>
+        <h1 className='title' ref = {titleRef}> Tic Tac Toe Game <span>Ahloha</span></h1>
         <div className="board">
           <div className="row1">
             <div className="boxes" ref = {box1} onClick = {(e) => {toggle(e,0)}}></div>
